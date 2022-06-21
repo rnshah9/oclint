@@ -1,4 +1,4 @@
-FROM --platform=linux/amd64 ubuntu:22.04 as builder
+FROM --platform=linux/amd64 ubuntu:22.04
 
 RUN apt-get update
 RUN DEBIAN_FRONTEND=noninteractive apt-get install -y build-essential cmake git python-is-python3 ninja-build subversion curl libz-dev
@@ -7,5 +7,3 @@ COPY . /repo
 WORKDIR /repo/oclint-scripts
 RUN ./make
 
-FROM ubuntu:22.04 as package
-COPY --from=builder /repo /repo
