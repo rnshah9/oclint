@@ -1,7 +1,6 @@
 project: oclint
 target: oclint-22-02
 cmds:
-  - cmd: /oclint-22.02 @@
-    filepath: /test.c
+  - cmd: /repo/build/oclint-release/bin/oclint-22.02 @@
     env:
       DISABLE_SMOKETEST: '1'
