@@ -1,0 +1,5 @@
+project: oclint
+target: removeunderscores
+cmds:
+  - cmd: /fuzz_removeUnderscores
+    libfuzzer: true

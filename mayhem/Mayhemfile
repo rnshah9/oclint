@@ -1,5 +1,0 @@
-project: oclint
-target: oclint-22-02
-cmds:
-  - cmd: /repo/build/oclint-release/bin/oclint-22.02 @@
-    filepath: /test.c

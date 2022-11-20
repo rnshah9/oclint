@@ -51,7 +51,8 @@ jobs:
       fail-fast: false
       matrix:
         mayhemfile:
-          - mayhem/Mayhemfile
+          - mayhem/Mayhemfile_oclint-22-2
+          - mayhem/Mayhemfile_removeUnderscores
 
     steps:
       - uses: actions/checkout@v2
